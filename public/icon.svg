@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Nutrition Tracker Icon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8fd9a9"/>
+      <stop offset="100%" stop-color="#2d8b57"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#f3fbf5"/>
+  <path d="M32 70c0-19 15-34 34-34 10 0 19 4 25 10 7 8 11 18 11 29 0 20-16 36-36 36S32 90 32 70Zm20 0c0 9 7 16 16 16s16-7 16-16-7-16-16-16-16 7-16 16Zm14-28c4 0 7-3 7-7s-3-7-7-7-7 3-7 7 3 7 7 7Z" fill="url(#g)"/>
+  <path d="M46 93c9 8 22 12 34 12 14 0 27-5 37-14-7 18-25 30-46 30-16 0-29-8-37-20 4 0 8 0 12-8Z" fill="#1f5539" opacity="0.12"/>
+</svg>
