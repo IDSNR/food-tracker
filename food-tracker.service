@@ -1,0 +1,22 @@
+[Unit]
+Description=AI Nutrition Tracker
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/mnt/HC_Volume_105327948/food-tracker
+EnvironmentFile=/mnt/HC_Volume_105327948/food-tracker/.env
+Environment=NODE_ENV=production
+Environment=PORT=3014
+ExecStart=/usr/bin/npm run start -- --hostname 0.0.0.0 --port 3014
+Restart=on-failure
+RestartSec=10
+StartLimitIntervalSec=120
+StartLimitBurst=5
+KillSignal=SIGTERM
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

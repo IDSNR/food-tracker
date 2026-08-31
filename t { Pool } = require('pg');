@@ -1,0 +1,12 @@
+                                Table "public.users"
+  Column  |  Type   | Collation | Nullable |                Default                 
+----------+---------+-----------+----------+----------------------------------------
+ user_id  | integer |           | not null | nextval('users_user_id_seq'::regclass)
+ email    | text    |           | not null | 
+ password | text    |           | not null | 
+Indexes:
+    "users_pkey" PRIMARY KEY, btree (user_id)
+    "users_email_key" UNIQUE CONSTRAINT, btree (email)
+Referenced by:
+    TABLE "accounts" CONSTRAINT "accounts_user_id_fkey" FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
+
